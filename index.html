@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highest Grossing Films</title>
+    <link rel="stylesheet" href="styles.css">
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Highest Grossing Films</h1>
+        <input id="searchInput" type="text" placeholder="Search...">
+        <button id="sort-by-year" onclick="sortTable(1)">Sort by Year</button>
+        <button id="sort-by-title" onclick="sortTable(0)">Sort by Title</button>
+        <button id="sort-by-box-office" onclick="sortTable(3)">Sort by Box Office</button>
+
+        <table id="movieTable">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Year</th>
+                    <th>Director</th>
+                    <th>Box Office</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody id="movieTableBody"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
